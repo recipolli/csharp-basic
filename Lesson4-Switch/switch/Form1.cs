@@ -24,32 +24,38 @@ namespace @switch
 
         private void button1_Click(object sender, EventArgs e)
         {
-            switch (listBox1.SelectedItem.ToString())
-            { 
-                case "Foobar":
-                    MessageBox.Show("You picked Foobar");
-                break;
+            for (int i = 0; i < listBox1.SelectedItems.Count; i++)
+            {
+            
+                switch (listBox1.SelectedItems[i].ToString())
+                { 
+                    case "Foobar":
+                        MessageBox.Show("You picked Foobar");
+                    break;
 
-                case "Bazquirk":
-                    MessageBox.Show("You picked Bazquirk");
-                break;
+                    case "Bazquirk":
+                        MessageBox.Show("You picked Bazquirk");
+                    break;
 
-                case "Widgets":
-                    MessageBox.Show("You picked Widgets");
-                break;
+                    case "Widgets":
+                        MessageBox.Show("You picked Widgets");
+                    break;
 
-                case "Gadgets":
-                    MessageBox.Show("You picked Gadgets");
-                break;
+                    case "Gadgets":
+                        MessageBox.Show("You picked Gadgets");
+                    break;
+                  
+                }
 
-                default:
-                    MessageBox.Show("You picked something else");
-                break;
-                     
             }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
