@@ -29,11 +29,8 @@ namespace assignment
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            
-            Form2 frm = new Form2();
-            frm.Show();
-           /* this.Close();*/
+        {            
+           this.Close();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -390,6 +387,12 @@ namespace assignment
                 button13.Text = "12";
                 button13.BackColor = Color.Lime;            
             }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.Show();
         }
        /* End of Button */
               
